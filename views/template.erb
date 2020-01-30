@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= params["page"] %> - Blank - Blog</title>
+</head>
+<body>
+	<nav>
+		<a href="/">Home</a>
+		<% @files.each do | index | %>
+		<a href='<%= index.split(".").first %>'><%= index.split(".").first %></a>
+		<% end %>
+	</nav>
+	<div class="content">
+		<%= @content %>
+	</div>
+</body>
+</html>

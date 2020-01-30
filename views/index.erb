@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= params["page"] %> - <%= @titles[0]%></title>
+</head>
+<body>
+	<nav>
+		<a href="/">Home</a>
+		<% @files.each do | index | %>
+		<a href='<%= index.split(".").first %>'><%= index.split(".").first %></a>
+		<% end %>
+	</nav>
+	<div class="container">
+		<p>In est excepteur velit et aute consectetur incididunt amet ut do excepteur tempor ea quis id magna velit ut in culpa deserunt nostrud ea consectetur cillum id excepteur amet magna in ea fugiat consequat ut ut consectetur nisi dolore est mollit deserunt dolor dolor anim adipisicing magna reprehenderit quis ex enim labore do in do ex velit enim duis incididunt dolor nostrud fugiat amet eu nulla dolore culpa duis incididunt ea velit fugiat sit incididunt veniam veniam irure in nulla nisi culpa fugiat ad irure in voluptate consectetur nisi et cupidatat duis minim ut sint dolor sed nostrud dolor sint est in proident dolor aute in ullamco ut aute et sit est qui anim nostrud voluptate sint id dolor sunt ex minim commodo adipisicing occaecat id aliqua amet labore nostrud et officia nisi labore nostrud dolor culpa quis mollit dolor ut dolore quis exercitation cillum dolor deserunt voluptate mollit dolor consectetur culpa culpa nulla est et nostrud amet exercitation esse dolore cupidatat in duis in amet ullamco mollit eu ad aute duis occaecat eiusmod non quis cillum.</p>
+		<hr>
+		<% @files.each do | index | %>
+     		<p> <%= index.split(".").first %> </p>
+		<% end %>
+	</div>
+</body>
+</html>
